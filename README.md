@@ -10,6 +10,11 @@ This application utilizes the OMDB API to provide users with information about v
 
 
 ## Demo
+![Project Screenshot1](image/Screenshot_1.png)
+![Project Screenshot1](image/Screenshot_2.png)
+
+
+
 
 
 ### Installation:
