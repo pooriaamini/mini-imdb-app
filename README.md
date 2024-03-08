@@ -1,8 +1,26 @@
-# React + Vite
+# imdb-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is a simple React application that utilizes the OMDB API to search for and display movie information.
+## Getting Started
+- Node.js and npm installed on your machine
 
-Currently, two official plugins are available:
+## Introduction
+This application utilizes the OMDB API to provide users with information about various movies. Whether you're looking for details about your favorite films or exploring new ones, this app has got you covered.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Demo
+
+
+### Installation:
+first extract files and go to project directory
+```bash
+npm install
+```
+
+### To start 
+```
+npm run build
+```
+
+
