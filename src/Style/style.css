@@ -1,0 +1,170 @@
+body {
+  @apply bg-slate-900;
+}
+
+.form {
+  @apply flex justify-between items-center m-5;
+}
+.form-div {
+  @apply flex flex-col justify-center items-center mt-3;
+}
+.form-div .text {
+  font-weight: bold;
+  @apply text-white text-[3rem];
+}
+.form-input {
+  @apply border w-[50vw] border-black rounded-l-[5px] p-[.5rem];
+}
+.form-btn {
+  @apply bg-blue-900 text-white p-[.55rem] rounded-r-[5px];
+}
+
+.list {
+  @apply text-white grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 px-[4rem] py-[2rem] gap-[1rem];
+}
+
+.show {
+  @apply flex flex-col items-center  p-2 relative;
+}
+.show .poster {
+  @apply w-[75%] h-[75%] rounded-[10px];
+}
+.show .close {
+  @apply h-6 w-6;
+  transition: all 0.5s;
+}
+.show .close:hover {
+  fill: white;
+  transform: translateY(-5px);
+}
+.show .close-btn {
+  @apply absolute top-[-2px];
+}
+.show .name {
+  @apply mt-[.5rem] text-center;
+}
+.show .rate {
+  @apply mt-1 flex flex-row-reverse gap-[.5rem] justify-center items-center;
+}
+.show .btn {
+  @apply bg-gray-800 px-5 py-[.5rem] mt-2 rounded-[5px] text-[#5799ef];
+}
+.show .like {
+  @apply w-5 h-5  mt-1 fill-[white];
+  transition: all 1s;
+}
+.show .like {
+  transform: rotate(-360deg);
+}
+.show .like-click {
+  @apply w-5 h-5  mt-1 fill-[red];
+  transition: all 1S;
+}
+.show .like-click {
+  transform: rotate(360deg);
+}
+.show .rating {
+  @apply flex flex-row-reverse items-center justify-between gap-5;
+}
+
+.detail {
+  @apply w-[70vw] md:w-[50vw];
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.detail-text {
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  @apply bg-[#1f1f1fd8]  text-white;
+}
+
+.btn-cls {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  @apply h-7 w-7;
+}
+
+.show-detail {
+  @apply flex flex-col items-start m-2 gap-3;
+}
+.show-detail .header {
+  @apply flex    gap-3 items-start;
+}
+.show-detail .header-sub {
+  @apply flex flex-col gap-1;
+}
+.show-detail .header-img {
+  @apply w-[5rem] h-[7rem];
+}
+.show-detail .header .btn {
+  @apply flex items-center gap-1 px-2;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.show-detail .header .btn .svg {
+  @apply w-4 h-4;
+}
+.show-detail .header .btn:hover {
+  background-color: rgb(66, 66, 66);
+  border-radius: 5px;
+}
+.show-detail .header .btn:hover .svg {
+  stroke: white;
+}
+.show-detail .header .btn:hover p {
+  color: white;
+}
+.show-detail .header .btn p {
+  color: #5799ef;
+}
+.show-detail .header .btn1 {
+  @apply flex gap-1 items-center;
+}
+.show-detail .rating {
+  @apply flex gap-1 items-center;
+}
+.show-detail .name {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.show-detail .title {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.show-detail .svg {
+  transition: stroke 0.2s;
+  @apply h-6 w-6;
+}
+.show-detail .svg:hover {
+  stroke: #f5c518;
+}
+.show-detail .year {
+  @apply flex gap-2;
+}
+.show-detail .star {
+  @apply mt-3;
+}
+
+.select {
+  @apply flex justify-center items-center gap-4;
+}
+.select p {
+  @apply text-white text-[1.5rem];
+}
+.select-item {
+  @apply bg-white rounded-[5px] p-2;
+}
+.select option {
+  @apply text-start;
+}
+
+.footer {
+  @apply self-center;
+}
+.footer .btn {
+  @apply flex justify-center bg-gray-800 w-[40vw]  py-[.6rem] mt-2 rounded-[5px] text-[#5799ef];
+}/*# sourceMappingURL=style.css.map */

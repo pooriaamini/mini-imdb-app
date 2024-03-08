@@ -1,0 +1,261 @@
+body{
+    
+    @apply bg-slate-900;
+    
+
+}
+
+
+.form{
+    &-div{
+        @apply flex flex-col justify-center items-center mt-3;
+
+        .text{
+            font-weight: bold;
+            @apply text-white text-[3rem]
+        }
+    }
+    @apply flex justify-between items-center m-5 ;
+
+    &-input{
+        @apply border w-[50vw] border-black rounded-l-[5px] p-[.5rem]
+    }
+    
+
+    &-btn{
+        @apply bg-blue-900 text-white p-[.55rem] rounded-r-[5px]
+    }
+}
+.list{
+    @apply text-white grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 px-[4rem] py-[2rem] gap-[1rem] ;
+}
+
+.show{
+    @apply flex flex-col items-center  p-2 relative ;
+
+   
+
+    .poster{
+        @apply w-[75%] h-[75%] rounded-[10px]   ;
+        
+    }
+    .close{
+        @apply h-6 w-6    ;
+        
+        transition: all .5s;
+    &:hover{
+        fill: white;
+        transform: translateY(-5px);
+    }
+   
+        &-btn{
+
+            @apply absolute top-[-2px]
+        }
+    }
+
+    .name{
+        @apply mt-[.5rem] text-center
+    }
+    .rate{
+        @apply mt-1 flex flex-row-reverse gap-[.5rem] justify-center items-center
+    }
+    .btn{
+        @apply bg-gray-800 px-5 py-[.5rem] mt-2 rounded-[5px] text-[#5799ef]
+    }
+    .like{
+        @apply w-5 h-5  mt-1 fill-[white];
+        transition: all 1s;
+        
+
+    }
+    
+    .like{
+
+        transform: rotate(-360deg)
+    }
+    .like-click{
+
+       
+        
+        @apply w-5 h-5  mt-1 fill-[red];
+
+        transition: all 1S;
+
+    }
+    .like-click{
+        transform: rotate(360deg)
+    }
+
+   
+    
+    .rating{
+     
+        @apply flex flex-row-reverse items-center justify-between gap-5
+    }
+}
+
+.app{
+  
+}
+
+
+.detail{
+    
+    @apply w-[70vw] md:w-[50vw];
+   
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+   
+
+    
+   
+    &-text{
+
+        padding: 1rem .5rem;
+        border-radius: 5px;
+
+        @apply bg-[#1f1f1fd8]  text-white;
+
+
+
+    }
+}
+
+.btn-cls{
+   position: absolute;
+   top: -10px;
+   right: -5px;
+  
+    
+    @apply h-7 w-7;
+}
+
+.show-detail{
+
+    @apply flex flex-col items-start m-2 gap-3;
+
+    .header{
+
+        @apply flex    gap-3 items-start ;
+
+
+        &-sub{
+
+            @apply flex flex-col gap-1
+        }
+
+        &-img{
+
+            @apply w-[5rem] h-[7rem]
+        }
+
+        .btn{
+            @apply flex items-center gap-1 px-2;
+            transition: all .5s;
+            border-radius:5px;
+            
+            
+            .svg{
+                @apply w-4 h-4;
+
+            }
+
+        &:hover{
+
+            background-color: rgb(66, 66, 66);
+            border-radius: 5px;
+
+            
+            .svg{
+                stroke: white;
+            }
+
+            p{
+                color: white;
+
+            }
+            
+
+        }    
+
+            p{
+                color: #5799ef;
+            }
+        }
+
+        .btn1{
+            @apply flex gap-1 items-center
+        }
+    }
+    
+    .rating{
+        @apply flex gap-1 items-center 
+    }
+
+    .name{
+        display: flex  ;
+        align-items: center;
+        gap: .25rem;
+    }
+
+    .title{
+
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+    .svg{ 
+
+        transition: stroke .2s;
+        
+        @apply h-6 w-6
+        
+        
+        
+
+    }
+    .svg:hover{
+
+        stroke: #f5c518
+    }
+    
+    .year{
+        @apply flex gap-2  ;
+    }
+
+
+.star{
+    @apply mt-3 
+}
+
+}
+
+.select{
+    @apply flex justify-center items-center gap-4;
+
+    p{
+        @apply text-white text-[1.5rem];
+    }
+
+    &-item{
+        @apply bg-white rounded-[5px] p-2  ;
+    }
+    option{
+        
+        @apply text-start;
+    }
+}
+.footer{
+   @apply self-center ;
+
+   .btn{
+    @apply flex justify-center bg-gray-800 w-[40vw]  py-[.6rem] mt-2 rounded-[5px] text-[#5799ef]
+
+   } 
+}
+
